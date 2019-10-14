@@ -3,4 +3,4 @@ this project is created by a college student from BJTU,I am a biginner of Androi
 
 设计文档.docx design document
 界面.docx UI design
-eLearing.rar whole project file compressed.
+platform the whole project file .
