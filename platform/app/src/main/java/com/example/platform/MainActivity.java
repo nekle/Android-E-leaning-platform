@@ -8,12 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
     private Button btn_pingpong;
     private Button btn_volleyball;
     private EditText editText_search;
-    private    Button btn_goToPerson;
+    private ImageButton imageButton_person1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
         editText_search=(EditText)findViewById(R.id.editText_serach);
         btn_pingpong=(Button)findViewById(R.id.btn_pingpong);
-        btn_goToPerson=(Button)findViewById(R.id.btn_goToPerson);
+        imageButton_person1=(ImageButton) findViewById(R.id.imageButton_person1);
 
 
 
-        btn_goToPerson.setOnClickListener(new View.OnClickListener() {
+        imageButton_person1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentGoToPerson=new Intent(MainActivity.this,personActivity.class);

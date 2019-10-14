@@ -43,7 +43,7 @@
         android:id="@+id/btn_volleyball"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="96dp"
         android:text="learn vollyball"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,16 +73,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageButton_search" />
 
-    <Button
-        android:id="@+id/btn_goToPerson"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="我的"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="264dp"
+        android:layout_height="92dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintVertical_bias="0.992"
+
+
+        >
+
+        <ImageButton
+            android:id="@+id/imageButton_home1"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            app:srcCompat="@drawable/homepage"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="522dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton_learning1"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="88dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/learning"
+            tools:layout_editor_absoluteX="179dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton_person1"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="176dp"
+            app:srcCompat="@drawable/person"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="508dp" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
